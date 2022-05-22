@@ -1,5 +1,5 @@
 module.exports = {
-  global: {
+  globals: {
     defineProps: 'readonly',
     defineEmits: 'readonly',
     defineExpose: 'readonly',
