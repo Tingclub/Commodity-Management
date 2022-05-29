@@ -7,8 +7,10 @@
 
 <script setup lang="ts">
 import { useStore } from '../../store'
+import user from '@/api/user'
 const store = useStore()
 console.log(store.state.count)
+console.log(user)
 
 </script>
 
