@@ -15,5 +15,7 @@ console.log(user)
 </script>
 
 <style lang="scss" scoped>
-
+div{
+  color: $color;
+}
 </style>
