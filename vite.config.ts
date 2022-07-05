@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import eslintPlugin from 'vite-plugin-eslint'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import path from 'path'
+import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
   plugins: [
@@ -13,6 +14,9 @@ export default defineConfig({
     }),
     vueJsx({
       //
+    }),
+    AutoImport({
+      imports: ['vue', 'vue-router']
     })
   ],
   resolve: {
