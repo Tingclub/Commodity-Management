@@ -30,5 +30,8 @@ export default defineConfig({
         additionalData: '@import "@/styles/variables.scss";'
       }
     }
+  },
+  server: { // ← ← ← ← ← ←
+    host: '192.168.141.238' // ← 新增内容 ←
   }
 })

@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import { useStore } from '../../store'
+import { useStore } from '@/store'
 import user from '@/api/user'
 import { ref } from '@vue/reactivity'
 const store = useStore()
