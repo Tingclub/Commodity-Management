@@ -2,8 +2,8 @@ import type { Plugin } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 // import legacy from '@vitejs/plugin-legacy';
-import { configStyleImportPlugin } from './styleImport'
-import { configSvgIconsPlugin } from './svgIcons'
+// import { configStyleImportPlugin } from './styleImport'
+// import { configSvgIconsPlugin } from './svgIcons'
 import { autoRegistryComponents } from './component'
 import { AutoImportDeps } from './autoImport'
 import { configMockPlugin } from './mock'
@@ -29,7 +29,7 @@ export function createVitePlugins (isBuild: boolean) {
   isBuild && vitePlugins.push(configCompressPlugin())
 
   // vite-plugin-svg-icons
-  vitePlugins.push(configSvgIconsPlugin(isBuild))
+  // vitePlugins.push(configSvgIconsPlugin(isBuild))
 
   // vite-plugin-mock
   vitePlugins.push(configMockPlugin(isBuild))
@@ -38,7 +38,7 @@ export function createVitePlugins (isBuild: boolean) {
   vitePlugins.push(configVisualizerConfig())
 
   // vite-plugin-style-import
-  vitePlugins.push(configStyleImportPlugin(isBuild))
+  // vitePlugins.push(configStyleImportPlugin(isBuild))
 
   return vitePlugins
 }
