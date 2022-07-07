@@ -7,6 +7,7 @@ import { createFromIconfontCN } from '@ant-design/icons-vue'
 
 // 全局样式
 import 'sanitize.css'
+
 import '@/styles/index.scss'
 // 图标
 const Fonts = createFromIconfontCN({
