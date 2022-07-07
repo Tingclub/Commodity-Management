@@ -1,24 +1,17 @@
 <template>
-  <div id="app">
+  <ConfigProvider :locale="zhCN">
     <router-view />
-  </div>
+  </ConfigProvider>
 </template>
 
 <script lang="ts" setup>
-
+import { ConfigProvider } from 'ant-design-vue'
+import zhCN from 'ant-design-vue/es/locale/zh_CN'
+console.log('my config env: ', import.meta.env)
 </script>
 <style lang="scss" scoped>
-html,
-body,
-#app {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  display: inline;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "PingFang SC", Arial, "Hiragino Sans GB", "Microsoft Yahei",
-    "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans-serif;
+.app{
+  height: 100vh;
+  overflow: hidden;
 }
 </style>

@@ -4,11 +4,12 @@
     {{ store.state.count }}
     <a-form
       :model="formState"
+      layout="inline"
       name="basic"
       :label-col="{ span: 8 }"
       :wrapper-col="{ span: 16 }"
       autocomplete="off"
-      class="loginform"
+      class="login-form"
     >
       <a-form-item
         label="用户名"
@@ -70,6 +71,20 @@ console.log('msg', msg)
     width: 40%;
     height: 30%;
     margin: 0 auto;
+    .ant-form-item{
+      display: flex;
+    }
+    #components-form-demo-normal-login .login-form-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    #components-form-demo-normal-login .login-form-forgot {
+      margin-bottom: 24px;
+    }
+    #components-form-demo-normal-login .login-form-button {
+      width: 100%;
+    }
   }
 }
 </style>
